@@ -1,0 +1,269 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #1b1818;
+  font-weight: 400;
+  line-height: 19px;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  background-color: #332208;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+  margin: 0 15px;
+  padding-bottom: 5px;
+  transition: 0.5s;
+  border-bottom: 1px solid transparent;
+}
+
+.menu__item:hover {
+  border-bottom: 1px solid #fefefe;
+}
+
+.menu__list-link {
+  text-transform: uppercase;
+  color: #fefefe;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.phone {
+  padding-bottom: 5px;
+  color: #fefefe;
+  font-size: 18px;
+  line-height: 21px;
+  transition: 0.5s;
+  border-bottom: 1px solid transparent;
+}
+
+.phone:hover {
+  border-bottom: 1px solid #fefefe;
+}
+
+.top {
+  padding-top: 80px;
+}
+
+.top__heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top__content {
+  text-align: center;
+  padding-top: 90px;
+  width: 50%;
+}
+
+.top__title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  color: #1b1818;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.top__text {
+  width: 470px;
+  margin: 20px auto 70px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.application-link {
+  text-transform: uppercase;
+  padding: 16px 19px;
+  background: #c5ac2d;
+  color: #fefefe;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+
+.application-link:hover {
+  background: #fefefe;
+  border: 1px solid #c5ac2d;
+  color: #c5ac2d;
+}
+
+.top__slider {
+  width: 50%;
+}
+
+.top__slider .slick-dots {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-dots {
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slick-dots button {
+  background: #1b1818;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+}
+
+.slick-active button {
+  width: 12px;
+  height: 12px;
+}
+
+.top__slider-text {
+  text-align: right;
+  padding-right: 100px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.top__slider-text span {
+  margin-left: 12px;
+}
+
+.top__bottom {
+  display: flex;
+  padding-top: 120px;
+  align-items: flex-end;
+}
+
+.top__items {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.top__links {
+  width: 50%;
+  margin-bottom: 6px;
+  text-align: end;
+  padding-right: 100px;
+}
+
+.top__link {
+  padding-bottom: 5px;
+  color: #1b1818;
+  border-bottom: 1px solid #1b1818;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+
+.top__item {
+  border: 1px solid #332208;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 13px 10px;
+  text-align: center;
+  max-width: 150px;
+  transition: 0.5s;
+}
+
+.top__item:hover {
+  transform: scale(1.25);
+}
+
+.top__item-text {
+  padding: 5px;
+  cursor: default;
+}
+
+.rent__inner {
+  padding-top: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rent__content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.rent__content-title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.rent__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rent__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 32px 40px;
+  text-align: center;
+  width: 250px;
+  min-height: 350px;
+  border: 1px solid #332208;
+}
+
+.rent__item + .rent__item {
+  margin-left: 50px;
+}
+
+.rent__item-number {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 115px;
+  text-align: center;
+  color: #1b1818;
+  opacity: 0.05;
+}
+
+.rent__title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
